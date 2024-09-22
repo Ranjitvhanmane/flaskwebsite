@@ -1,0 +1,36 @@
+body {
+    background-color: #f8f9fa;
+}
+h1 {
+    color: #343a40;
+}
+
+/* Add this to your styles.css file */
+.carousel-item img {
+    height: 400px; /* Set the desired height */
+    object-fit: cover; /* Ensures the image fills the container and crops if necessary */
+    width: 100%; /* Make sure the width is always 100% */
+}
+
+/* Custom image height for smaller screens (mobile) */
+@media (max-width: 768px) {
+    .carousel-item img {
+        height: 250px; /* Reduce the height for smaller screens */
+    }
+}
+
+/* Custom card styling */
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.card-img-top {
+    object-fit: cover; /* Ensures the image fits nicely in the card */
+    height: 300px; /* Set a fixed height for product images */
+}
+
